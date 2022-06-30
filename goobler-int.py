@@ -10,5 +10,5 @@ import requests
 # PURE FUNCS:
 
 def start(tkn):
-  resp = requests.get("https://goobler.tairhyswood.repl.co/api/get_name_using_auth", {"auth": f"Bearer {tkn}"}).json()
+  resp = requests.get("https://goobler.imango.com.au/api/get_name_using_auth", {"auth": f"Bearer {tkn}"}).json()
   print("Starting {resp['user_name']}...")
