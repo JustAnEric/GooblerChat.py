@@ -18,12 +18,12 @@ Nothing is to show here...
 # How to install this package?
 
 Put this in your Shell tab or Terminal. This will install the package onto your project!
-```
-pip install git+https://github.com/WWEMGamer2/GooblerAPIWrapper
+```sh
+git clone https://github.com/WWEMGamer2/GooblerPKG.git
 ```
 To import our package, use:
 ```py
-import goobler-int
+import goobler
 ```
 
 > :warning: This is the official docs and package. If anyone doesn't have something in context, then that package is fake!! Staff members will never ask for your password or personal information. We will only do it at some security times which make sense.
