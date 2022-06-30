@@ -9,6 +9,8 @@ class Colour():
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-with open('newClient?', 'r') as f:
-    if f == "True":
-        print(Colour.HEADER + 'Setting up bot client')
+class Storage:
+  newClient = True
+
+if Storage.newClient == True:
+  print(Colour.HEADER + 'Setting up bot client')
