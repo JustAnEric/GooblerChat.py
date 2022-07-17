@@ -12,4 +12,6 @@ import requests
 def start(tkn):
   resp = requests.get("https://goobler.imango.com.au/api/get_name_using_auth", {"auth": f"{tkn}"}).json()
   print(f"Starting {resp['user_name']}...")
-  
+  resp2 = requests.post("https://goobler.imango.com.au/api/login/bot_account", {"auth": f"{tkn}"}).json()
+  print(resp['user_name'] + "has logged in.")
+
