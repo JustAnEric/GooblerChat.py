@@ -13,4 +13,5 @@ class Storage:
   newClient = True
 
 if Storage.newClient == True:
-  print(Colour.HEADER + 'Setting up bot client')
+  print(Colour.HEADER + 'Setting up bot client...')
+  newClient=False
