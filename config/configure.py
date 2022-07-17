@@ -3,8 +3,8 @@ from list import listarray
 class ListValueType:
     def __init__(self, value):
         pass
-    String = str(value)
-    Integer = int(value)
+    String = str()
+    Integer = int()
 
 def get_list():
     return listarray
