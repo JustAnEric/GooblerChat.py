@@ -23,7 +23,7 @@ git clone https://github.com/WWEMGamer2/GooblerAPIWrapper.git
 ```
 To import our package, use:
 ```py
-import goobler
+import GooblerPKG
 ```
 
 > :warning: This is the official docs and package. If anyone doesn't have something in context, then that package is fake!! Staff members will never ask for your password or personal information. We will only do it at some security times which make sense.
