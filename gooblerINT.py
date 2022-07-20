@@ -1,14 +1,21 @@
+# IMPORTS:
+import os
+import sys
+import re
+import time
+import random
+import json
 import requests
 from .config.colors import Colour
 
-def hostForever(bool=False, tkn=None):
-    if tkn != None:
-        resp = requests.post('https://goobler.imango.com.au/api/hosts/hostforever', {"auth": tkn})
-    else:
-        print(Colour.WARNING + Colour.BOLD + Colour.UNDERLINE + "[GooblerAPI] You cannot run hostForever without a token! Remember, the token is the admin password to your application.")
+# PURE FUNCS:
 
-def startHosting(tkn=None):
-  if tkn != None:
-    resp = requests.post('https://goobler.imango.com.au/api/hosts/start', {"auth": tkn})
-  else:
-    print(Colour.WARNING + Colour.BOLD + Colour.UNDERLINE + "[GooblerAPI] You cannot run hostForever without a token! Remember, the token is the admin password to your application.")
+def start(tkn):
+  resp = requests.get("https://goobler.imango.com.au/api/get_name_using_auth", {"auth": f"{tkn}"}).json()
+  print(f"Starting {resp['user_name']}...")
+  resp2 = requests.post("https://goobler.imango.com.au/api/login/bot_account", {"auth": f"{tkn}"}).json()
+  print(resp['user_name'] + "has logged in.")
+
+def Application(client_id=None, token=None):
+  if token == None:
+    print(Colour.FAIL + Colour.BOLD + Colour.UNDERLINE + "[GooblerAPI] You cannot execute 'MakeApplication' without the positional arguments, token. Remember, the token is the admin password to your application.")
