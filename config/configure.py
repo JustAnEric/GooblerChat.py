@@ -1,5 +1,11 @@
 from li import listarray
 
+###################
+### Goobler 2022 ##
+###################
+# Scripts made by Eric #
+
+
 class ListValueType:
     def __init__(self, value):
         pass
