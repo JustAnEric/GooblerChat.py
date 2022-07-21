@@ -1,4 +1,4 @@
-# GooblerAPIWrapper
+# Goobler API Wrapper for Python
 The all new Goobler API wrapper which you may host your bot on! 
 
 > ⚠️ This package is still in development, so please be patient!
