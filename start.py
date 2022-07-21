@@ -1,3 +1,8 @@
+###################
+### Goobler 2022 ##
+###################
+# Scripts made by Eric #
+
 class Colour():
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'

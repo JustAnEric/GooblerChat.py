@@ -1,4 +1,9 @@
 from setuptools import setup
+###################
+### Goobler 2022 ##
+###################
+# Scripts made by Eric #
+
 
 setup(
   name = "goobler_api_wrapper",

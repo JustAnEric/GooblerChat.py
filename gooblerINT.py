@@ -8,6 +8,13 @@ import json
 import requests
 from .config.colors import Colour
 
+###################
+### Goobler 2022 ##
+###################
+# Scripts made by Eric #
+
+
+
 # PURE FUNCS:
 
 def start(tkn):
