@@ -5,7 +5,12 @@ The all new Goobler API wrapper which you may host your bot on!
 
 # Basics:
 
-Nothing is to show here...
+## Sending a simple message
+```py
+    @GooblerPKG.basic.command()
+    def ...(ctx):
+        GooblerPKG.basic.msg.Execute.send(ctx, "Hello world!")
+```
 
 # Maths:
 
