@@ -7,8 +7,8 @@ from setuptools import find_packages
 
 
 setup(
-  # the name must match the folder name 'gooblpy'
-        name="gooblpy", 
+  # the name must match the folder name 'GooblerPKG'
+        name="GooblerPKG", 
         version="1.0.0",
         author="Goobler",
         author_email="<admin@goobler.epizy.com>",
