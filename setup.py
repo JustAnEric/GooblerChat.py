@@ -1,4 +1,5 @@
 from setuptools import setup
+from setuptools import find_packages
 ###################
 ### Goobler 2022 ##
 ###################
@@ -6,13 +7,24 @@ from setuptools import setup
 
 
 setup(
-  name = "goobler_api_wrapper",
-  version = "1.0",
-  packages = [],
-  package_dir = {"": "/"},
-  url = "https://goobler.imango.com.au",
-  license = "",
-  author = "Eric - GooblerTeam",
-  author_email = "ericmuzyk@icloud.com",
-  description = "The official GooblerAPI Wrapper for Goobler companion!"
+  # the name must match the folder name 'gooblpy'
+        name="gooblpy", 
+        version="1.0.0",
+        author="Goobler",
+        author_email="<admin@goobler.epizy.com>",
+        description="The Goobler Python API",
+        long_description="Goobler's python API package which you may host your bot on!",
+        packages=find_packages(),
+        install_requires=[], # add any additional packages that 
+        # needs to be installed along with your package. Eg: 'caer'
+        
+        keywords=['python', 'api'],
+        classifiers= [
+            "Development Status :: 3 - Alpha",
+            "Intended Audience :: Education",
+            "Programming Language :: Python :: 2",
+            "Programming Language :: Python :: 3",
+            "Operating System :: MacOS :: MacOS X",
+            "Operating System :: Microsoft :: Windows",
+        ]
 )
