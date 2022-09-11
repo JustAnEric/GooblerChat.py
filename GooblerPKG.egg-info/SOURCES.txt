@@ -1,0 +1,6 @@
+README.md
+setup.py
+GooblerPKG.egg-info/PKG-INFO
+GooblerPKG.egg-info/SOURCES.txt
+GooblerPKG.egg-info/dependency_links.txt
+GooblerPKG.egg-info/top_level.txt

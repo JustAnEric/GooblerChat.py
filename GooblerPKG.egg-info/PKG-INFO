@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: GooblerPKG
+Version: 1.0.0
+Summary: The Goobler Python API
+Home-page: UNKNOWN
+Author: Goobler
+Author-email: <admin@goobler.epizy.com>
+License: UNKNOWN
+Description: Goobler's python API package which you may host your bot on!
+Keywords: python,api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
