@@ -3,4 +3,6 @@
 ###################
 # Scripts made by Eric #
 
-print("[Process] INITIALIZED")
+from gooblerpkg.core import Init
+
+Init()
