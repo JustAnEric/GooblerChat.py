@@ -36,4 +36,4 @@ def start(tkn):
 
 def Application(client_id=None, token=None):
   if token == None:
-    print(colors.FAIL + colors.BOLD + colors.UNDERLINE + "[GooblerAPI] You cannot execute 'MakeApplication' without the positional arguments, token. Remember, the token is the admin password to your application.")
+    print(colors._FAIL + colors._BOLD + colors._UNDERLINE + "[GooblerAPI] You cannot execute 'MakeApplication' without the positional arguments, token. Remember, the token is the admin password to your application.")
