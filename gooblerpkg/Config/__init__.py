@@ -3,6 +3,6 @@
 ###################
 # Scripts made by Eric #
 
-from gooblerpkg.core import Init
+from gooblerpkg.Core import Init
 
 Init()
