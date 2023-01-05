@@ -8,8 +8,8 @@ The all new Goobler API wrapper which you may host your bot on!
 ## Sending a simple message
 ```py
     @GooblerPKG.basic.command()
-    def ...(ctx):
-        GooblerPKG.basic.msg.Execute.send(ctx, "Hello world!")
+    def ...(interaction):
+        interaction.send("Hello world!")
 ```
 
 # Maths:
@@ -36,4 +36,4 @@ import GooblerPKG
 ```
 
 > :warning: This is the official docs and package. If anyone doesn't have something in context, then that package is fake!! Staff members will never ask for your password or personal information. We will only do it at some security times which make sense.
-> :dango: Official API help and docs is here: https://goobl2.ericplayzyt.repl.co/docs/api
+> :dango: Official API help and docs is here: https://chat.goobler.co.uk/docs/api
