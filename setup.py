@@ -9,7 +9,7 @@ from setuptools import find_packages
 setup(
   # the name must match the folder name 'GooblerPKG'
         name="GooblerPKG", 
-        version="2.0.26",
+        version="2.0.27",
         author="Goobler",
         author_email="<admin@goobler.epizy.com>",
         description="The Goobler Python API",
