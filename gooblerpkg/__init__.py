@@ -29,10 +29,10 @@ from .Config import colors
 # PURE FUNCS:
 
 def start(tkn):
-  resp = requests.get("https://goobl2.ericplayzyt.repl.co/api/get_name_using_auth", {"auth": f"{tkn}"})
-  print(f"Starting {resp}...")
+  resp = requests.get("https://goobl2.ericplayzyt.repl.co/api/get_name_using_auth", {"auth": f"{tkn}"}).text
+  print(f"Starting bot({resp})...")
   resp2 = requests.post("https://goobl2.ericplayzyt.repl.co/api/login/bot_account", {"auth": f"{tkn}"})
-  print(resp + "has logged in.")
+  print(colors.BOLD + resp + " has logged in." + colors.ENDC)
 
 def Application(client_id=None, token=None):
   if token == None:
