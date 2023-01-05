@@ -29,9 +29,9 @@ from .Config import colors
 # PURE FUNCS:
 
 def start(tkn):
-  resp = requests.get("https://goobl2.ericplayzyt.repl.co/api/get_name_using_auth", {"auth": f"{tkn}"}).replace("'", "\"").json()
+  resp = requests.get("https://goobl2.ericplayzyt.repl.co/api/get_name_using_auth", {"auth": f"{tkn}"})
   print(f"Starting {resp['name']}...")
-  resp2 = requests.post("https://goobl2.ericplayzyt.repl.co/api/login/bot_account", {"auth": f"{tkn}"}).replace("'", "\"").json()
+  resp2 = requests.post("https://goobl2.ericplayzyt.repl.co/api/login/bot_account", {"auth": f"{tkn}"})
   print(resp['name'] + "has logged in.")
 
 def Application(client_id=None, token=None):
