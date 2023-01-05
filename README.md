@@ -24,7 +24,7 @@ Nothing is to show here...
 
 Put this in your Shell tab or Terminal. This will install the package onto your project!
 ```
-git clone https://github.com/WWEMGamer2/GooblerAPIWrapper.git
+git clone https://github.com/WWEMGamer2/GooblerChat.py.git
 +-+
 pip install gooblerpkg
 +-+
