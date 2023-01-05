@@ -6,7 +6,7 @@ import time
 import random
 import json
 import requests
-from gooblerpkg.Config import colors
+from .Config import colors
 
 ###################
 ### Goobler 2022 ##
@@ -29,10 +29,10 @@ from gooblerpkg.Config import colors
 # PURE FUNCS:
 
 def start(tkn):
-  resp = requests.get("https://goobl2.ericplayzyt.repl.co/api/get_name_using_auth", {"auth": f"{tkn}"}).json()
-  print(f"Starting {resp['user_name']}...")
-  resp2 = requests.post("https://goobl2.ericplayzyt.repl.co/api/login/bot_account", {"auth": f"{tkn}"}).json()
-  print(resp['user_name'] + "has logged in.")
+  resp = requests.get("https://goobl2.ericplayzyt.repl.co/api/get_name_using_auth", {"auth": f"{tkn}"}).replace("'", "\"").json()
+  print(f"Starting {resp['name']}...")
+  resp2 = requests.post("https://goobl2.ericplayzyt.repl.co/api/login/bot_account", {"auth": f"{tkn}"}).replace("'", "\"").json()
+  print(resp['name'] + "has logged in.")
 
 def Application(client_id=None, token=None):
   if token == None:
