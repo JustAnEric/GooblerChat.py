@@ -2,6 +2,7 @@
 The all new Goobler API wrapper which you may host your bot on! 
 
 > ⚠️ This package is still in development, so please be patient!
+> You can download this package and host it locally without having to use pip(3)
 
 # Basics:
 
