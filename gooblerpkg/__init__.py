@@ -7,6 +7,7 @@ import random
 import json
 import requests
 from .Config import colors
+from .Storage import commandsRegistered, getCommand, executeCommand, registerCommand
 
 ###################
 ### Goobler 2022 ##
@@ -33,6 +34,8 @@ def start(tkn):
   print(f"Starting bot({resp})...")
   resp2 = requests.post("https://goobl2.ericplayzyt.repl.co/api/login/bot_account", {"auth": f"{tkn}"})
   print(colors.BOLD + resp + " has logged in." + colors.ENDC)
+  while True:
+    getCommand("help")
 
 def Application(client_id=None, token=None):
   if token == None:
